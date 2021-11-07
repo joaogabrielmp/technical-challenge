@@ -1,5 +1,4 @@
 import { DecomposeNumber as Interface } from '@/domain/interfaces'
-
 import { divisorNumber, primeDivisors } from '@/domain/services'
 
 export class DecomposeNumber implements Interface {
