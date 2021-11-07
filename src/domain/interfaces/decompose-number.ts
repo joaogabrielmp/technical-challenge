@@ -8,6 +8,7 @@ export namespace DecomposeNumber {
   }
 
   export type Output = {
+    entryNumber: number
     divisorNumbers: number[]
     primeDividers: number[]
   }

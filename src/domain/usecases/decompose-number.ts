@@ -2,6 +2,12 @@ import { DecomposeNumber as Interface } from '@/domain/interfaces'
 
 export class DecomposeNumber implements Interface {
   async execute ({ number }: Interface.Input): Promise<Interface.Output> {
-    return { divisorNumbers: [], primeDividers: [] }
+    const result = {
+      entryNumber: number,
+      divisorNumbers: [],
+      primeDividers: []
+    }
+
+    return result
   }
 }
