@@ -1,13 +1,15 @@
-## Desafio
-### Um cliente precisa de um sistema que seja capaz de decompor um número em todos os seus divisores, enumerando também aqueles que forem primos. Obs.: Não é permitido o uso de bibliotecas prontas, se houver, que façam a decomposição.
+# Desafio
+### Um cliente precisa de um sistema que seja capaz de decompor um número em todos os seus divisores, enumerando também aqueles que forem primos.
 
-    ◦ Dado um número de entrada, o programa deve calcular todos os divisores que compõem o número.
-    ◦ Dado um número de entrada, o programa deve calcular todos os divisores primos que compõem o número.
+### Obs.: Não é permitido o uso de bibliotecas prontas, se houver, que façam a decomposição.
 
-## Exemplo de Console:
-Digite um número: 45
+- Dado um número de entrada, o programa deve calcular todos os divisores que compõem o número.
+- Dado um número de entrada, o programa deve calcular todos os divisores primos que compõem o número.
 
-Após o usuário digitar o número, Console pode mostrar:
-Número de Entrada: 45
-Números divisores: 1 3 5 9 15 45
-Divisores Primos: 1 3 5
+# Exemplo de Console:
+### Digite um número: 45
+
+### Após o usuário digitar o número, Console pode mostrar:
+- Número de Entrada: 45
+- Números divisores: 1 3 5 9 15 45
+- Divisores Primos: 1 3 5
