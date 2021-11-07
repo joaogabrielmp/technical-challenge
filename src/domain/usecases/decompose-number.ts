@@ -1,19 +1,16 @@
 import { DecomposeNumber as Interface } from '@/domain/interfaces'
 
+import { divisorNumber, primeDivisors } from '@/domain/services'
+
 export class DecomposeNumber implements Interface {
   async execute ({ number }: Interface.Input): Promise<Interface.Output> {
-    const divisorNumbers = []
-
-    for (let index = 0; index <= number; index++) {
-      if (number % index === 0) {
-        divisorNumbers.push(index)
-      }
-    }
+    const divisorNumbers = divisorNumber(number)
+    const primeDividers = primeDivisors(number)
 
     const result = {
       entryNumber: number,
       divisorNumbers,
-      primeDividers: []
+      primeDividers
     }
 
     return result
