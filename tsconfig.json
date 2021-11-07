@@ -14,8 +14,7 @@
       "@/*": ["*"],
       "@/tests/*": ["../tests/*"]
     },
-    "strict": true,
-    "noImplicitOverride": true,
+    "useUnknownInCatchVariables": false,
     "removeComments": true,
   },
   "include": ["src", "tests"]
