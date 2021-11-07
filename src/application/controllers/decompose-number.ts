@@ -9,7 +9,7 @@ export class DecomposeNumberController implements Controller {
     private readonly decomposeNumber: DecomposeNumber
   ) {}
 
-  async handle (request: ControllerInput): Promise<HttpResponse> {
+  async handle (request: DecomposeNumberController.Input): Promise<HttpResponse> {
     try {
       const error = this.validation.validate(request)
       if (error) {
@@ -29,6 +29,8 @@ export class DecomposeNumberController implements Controller {
   }
 }
 
-interface ControllerInput {
-  number: number
+export namespace DecomposeNumberController {
+  export type Input = {
+    number: number
+  }
 }
