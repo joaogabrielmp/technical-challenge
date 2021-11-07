@@ -7,7 +7,7 @@ export class DecomposeNumber implements Interface {
     const primeDividers = primeDivisors(divisorNumbers)
 
     const result = {
-      entryNumber: number,
+      entryNumber: Number(number),
       divisorNumbers,
       primeDividers
     }

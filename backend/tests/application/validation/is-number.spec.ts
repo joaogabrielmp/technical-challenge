@@ -15,7 +15,7 @@ const makeSut = (): SutTypes => {
 describe('IsNumberValidation', () => {
   test('Should return an InvalidParamError if validation fails', () => {
     const { sut } = makeSut()
-    const error = sut.validate({ [field]: '1' })
+    const error = sut.validate({ [field]: 'any' })
     expect(error).toEqual(new InvalidParamError(field))
   })
 

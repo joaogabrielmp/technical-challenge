@@ -5,7 +5,7 @@ export class IsNumber implements Validation {
   constructor (private readonly fieldName: string) {}
 
   validate (input: any): Error {
-    if (typeof input[this.fieldName] !== 'number') {
+    if (!Number.isInteger(Number(input[this.fieldName]))) {
       return new InvalidParamError(this.fieldName)
     }
   }
