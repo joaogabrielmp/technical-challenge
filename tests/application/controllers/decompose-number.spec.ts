@@ -27,7 +27,7 @@ const makeSut = (): SutTypes => {
 }
 
 describe('DecomposeNumberController', () => {
-  test('Should return 500 if AddArea throws', async () => {
+  test('Should return 500 if DecomposeNumber throws', async () => {
     const { sut, decomposeNumberSpy } = makeSut()
     jest.spyOn(decomposeNumberSpy, 'execute').mockImplementationOnce(throwError)
     const httpResponse = await sut.handle(mockRequest())
