@@ -18,3 +18,5 @@
 - Após clonar o backend, rodar um npm i para instalar as dependências
 - Em seguinda, rodar o comando npm run dev
 - A API subirá na porta 3333. Exemplo: localhost:3333/api
+- Fazer o clone do frontend e rodar yarn para instalar as dependências
+- Depois, rodar o comando yarn start
