@@ -1,12 +1,9 @@
-import { divisorNumber } from '@/domain/services'
-
-export function primeDivisors (number: number): number[] {
-  const divisorNumbers = divisorNumber(number)
+export function primeDivisors (numbers: number[]): number[] {
   const primeDividers = []
 
-  divisorNumbers.forEach((divisorNumber: number) => {
-    if (isPrime(divisorNumber)) {
-      primeDividers.push(divisorNumber)
+  numbers.forEach((number: number) => {
+    if (isPrime(number)) {
+      primeDividers.push(number)
     }
   })
 
