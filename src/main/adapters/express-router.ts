@@ -9,7 +9,6 @@ export const adaptExpressRoute = (controller: Controller) => {
       ...(req.params === null ? {} : req.body),
       ...(req.query === null ? {} : req.body)
     }
-    console.log(request)
     const httpResponse = await controller.handle(request)
 
     if (httpResponse.statusCode >= 200 && httpResponse.statusCode <= 299) {
