@@ -1,7 +1,8 @@
 import { DecomposeNumberController } from '@/application/controllers'
 import { MissingParamError, InvalidParamError, ServerError } from '@/application/errors'
 import { badRequest, serverError } from '@/application/helpers'
-import { DecomposeNumberSpy, ValidationSpy, throwError } from '@/tests/application/mocks'
+import { DecomposeNumberSpy, ValidationSpy } from '@/tests/application/mocks'
+import { throwError } from '@/tests/helpers'
 
 const mockRequest = (): DecomposeNumberController.Input => {
   return {
